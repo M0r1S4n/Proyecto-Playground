@@ -1,0 +1,135 @@
+body {
+    font-size: 12px;
+    font-family: 'Playfair Display', roboto;    
+}
+
+/*-------------------- HEADER --------------------------*/
+#header {
+    background-color: #EAC926;
+}
+
+/*LOGO*/
+.logo {
+    width: 150px;
+    height: 50px;
+    margin: 30px 10px 0px 30px;
+    padding-top: 20px;
+}
+.logo img {
+    max-width: 100%;
+    max-height: 100%;   
+}
+
+/*BARRA DE BUSQUEDA*/
+.barraDeBusqueda {
+    margin-left: 15px;
+}
+.barraDeBusqueda i {
+    background-color: #ebebeb;
+    box-shadow: 0px 0px 0px 2px #ebebeb;
+    border-radius: 5%;
+    margin: 3px 3px;
+}
+
+/*TEXTO*/
+.textoHeader {
+    text-align: center;
+}
+
+/*NAVEGADOR*/
+ul {
+    padding: 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.listaDes a{
+    text-decoration: none;
+}
+
+/*MENU BURGER*/
+.burger-menu i{
+    color: white;
+    background-color: #1259c3;
+    box-shadow: 0px 0px 0px 10px #1259c3;
+    border-radius: 5%;
+    font-size: 25px;
+    margin: 10% 50%;
+}
+
+/*--------------------------MAIN---------------------------*/
+main {
+    background-color: #ebebeb;
+    text-align:left;
+    padding-bottom: 10px;
+    color: #666;  
+}
+
+/*---------------------BANNER---------------------------*/
+.bannerMain {
+    height: 100;
+    width: auto;
+}
+.bannerMain img {
+    max-width: 100%;
+    max-height: 100%;    
+}
+
+/*------------------IMAGENES----------------------*/
+.img {
+    width: 381.333px;
+    height: 320px;
+    margin: 20px 20px 0px 20px;
+}
+.img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*------------DESCRIPCION----------------*/
+.descripcion {
+    background-color: white;
+    margin: 0px 20px 0px 20px;
+}
+.precio {
+    margin: 0px 0px 0px 0px;
+    font-size: 18px;
+}
+.off {
+    color: #39b54a;
+    font-size: 16px;
+    margin: 1px 0px 0px 1px;
+}
+h5 {
+    margin: 0px 0px 0px 0px;
+    font-size: 16px; 
+    font-weight: lighter;   
+}
+
+/*------------------TITULARES---------------------*/
+.main h3 {
+    font-size: 24px;    
+}
+
+/*------------------FOOTER---------------*/
+footer {
+    color: #666;
+}
+#footer .icono i {
+    color: #1259c3;
+    margin: 40px 20px 10px 20px;
+    font-size: 2em;
+}
+#footer section {
+    text-align: center;
+    margin: 0px 40px 10px 40px;
+}
+#footer h4 {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: large;
+}
+#footer p {
+    margin-top: 0px;
+}
+#divFooter {
+    padding-top: 10px;
+}
