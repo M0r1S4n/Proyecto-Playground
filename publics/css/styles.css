@@ -75,8 +75,8 @@ main {
 
 /*------------------IMAGENES----------------------*/
 .img {
-    width: 381.333px;
-    height: 320px;
+    width: auto;
+    height: auto;
     margin: 20px 20px 0px 20px;
 }
 .img img{
@@ -120,7 +120,7 @@ footer {
 }
 #footer section {
     text-align: center;
-    margin: 0px 40px 10px 40px;
+    margin: auto;
 }
 #footer h4 {
     margin-top: 0px;
