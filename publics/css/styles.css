@@ -26,10 +26,12 @@ body {
 }
 .barraDeBusqueda i {
     background-color: #ebebeb;
-    box-shadow: 0px 0px 0px 2px #ebebeb;
     border-radius: 5%;
-    margin: 3px 3px;
+    border: solid 1px #666;
+    padding: 1px 0px;
+    margin: 1px;
 }
+
 
 /*TEXTO*/
 .textoHeader {
@@ -40,6 +42,7 @@ body {
 ul {
     padding: 0px 0px;
     margin: 0px 0px 0px 0px;
+    display: none;
 }
 .listaDes a{
     text-decoration: none;
@@ -49,10 +52,10 @@ ul {
 .burger-menu i{
     color: white;
     background-color: #1259c3;
-    box-shadow: 0px 0px 0px 10px #1259c3;
-    border-radius: 5%;
+    padding: 10px 15px;
+    border-radius: 15%;
     font-size: 25px;
-    margin: 10% 50%;
+    margin: 15px 57% 10px 43%;
 }
 
 /*--------------------------MAIN---------------------------*/
@@ -60,7 +63,14 @@ main {
     background-color: #ebebeb;
     text-align:left;
     padding-bottom: 10px;
-    color: #666;  
+    color: #666; 
+}
+#main .section {
+    width: 90%;
+    margin: auto;
+}
+#main article {
+    margin-top: 10px;
 }
 
 /*---------------------BANNER---------------------------*/
@@ -76,30 +86,39 @@ main {
 /*------------------IMAGENES----------------------*/
 .img {
     width: auto;
-    height: auto;
-    margin: 20px 20px 0px 20px;
+    margin: 0px 20px;
 }
 .img img{
     max-width: 100%;
-    max-height: 100%;
 }
 
 /*------------DESCRIPCION----------------*/
 .descripcion {
     background-color: white;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
+    padding: 10px;
+    border-top: solid 1px #ebebeb;
+}
+.descripcion i {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+    padding: 1vw;
+    margin: 15px;
+    margin-bottom: 0px;
 }
 .precio {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 15px;
     font-size: 18px;
 }
 .off {
     color: #39b54a;
     font-size: 16px;
-    margin: 1px 0px 0px 1px;
+    margin: 1px 0px 0px 15px;
 }
-h5 {
-    margin: 0px 0px 0px 0px;
+.descripcion h5 {
+    display: none;
+    margin: 0px 0px 0px 15px;
     font-size: 16px; 
     font-weight: lighter;   
 }
@@ -132,4 +151,28 @@ footer {
 }
 #divFooter {
     padding-top: 10px;
+}
+
+/*-------------MEDIA----------*/
+
+@media (min-width: 361px) {
+    ul {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion h5 {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    
 }
