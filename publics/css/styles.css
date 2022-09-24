@@ -1,54 +1,84 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
 body {
     font-size: 12px;
-    font-family: 'Playfair Display', roboto;    
+    font-family: 'Playfair Display', roboto;
+    background-color: #ebebeb;    
 }
 
 /*-------------------- HEADER --------------------------*/
 #header {
     background-color: #EAC926;
 }
-
-/*LOGO*/
+#header .top {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+/*-----------------LOGO-------------------*/
 .logo {
-    width: 150px;
-    height: 50px;
-    margin: 30px 10px 0px 30px;
-    padding-top: 20px;
+    width: 50%;
+    padding: 3%;
 }
-.logo img {
-    max-width: 100%;
-    max-height: 100%;   
+.logo img {  
+    width: fit-content;
 }
 
-/*BARRA DE BUSQUEDA*/
+/*--------------BARRA DE BUSQUEDA-------------*/
 .barraDeBusqueda {
-    margin-left: 15px;
+    width: 50%;
 }
-.barraDeBusqueda i {
-    background-color: #ebebeb;
-    border-radius: 5%;
-    border: solid 1px #666;
-    padding: 1px 0px;
-    margin: 1px;
+.buscar {
+    padding: 0 5%;
+    display: flex;
 }
+.buscar input {
+    width: 90%;
+    padding: 5% 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-weight: 700;
+}
+.buscar button {
+    width: 10%;
+    padding: 1px;
+    background-color: #FFF;
+    border-radius: 0px 3px 3px 0;
+    border: none;
+}
+.barraDeBusqueda .icono {
+    color:#666666;
 
 
-/*TEXTO*/
+}
+
+/*---------------TEXTO---------------*/
 .textoHeader {
     text-align: center;
+    width: 100%;
 }
 
-/*NAVEGADOR*/
-ul {
-    padding: 0px 0px;
-    margin: 0px 0px 0px 0px;
+/*--------------NAVEGADOR---------------*/
+.navegacion {
     display: none;
 }
-.listaDes a{
+.navegacion ul {
+    list-style: none;
+}
+.navegacion a {
     text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
 }
 
-/*MENU BURGER*/
+/*-----------------MENU BURGER-----------------*/
 .burger-menu i{
     color: white;
     background-color: #1259c3;
@@ -62,12 +92,13 @@ ul {
 main {
     background-color: #ebebeb;
     text-align:left;
-    padding-bottom: 10px;
+    padding-bottom:10px;
     color: #666; 
-}
-#main .section {
     width: 90%;
     margin: auto;
+}
+#main .section {
+    margin-bottom: 10px;
 }
 #main article {
     margin-top: 10px;
@@ -75,62 +106,88 @@ main {
 
 /*---------------------BANNER---------------------------*/
 .bannerMain {
-    height: 100;
-    width: auto;
+    width: 100%;
 }
 .bannerMain img {
-    max-width: 100%;
-    max-height: 100%;    
+    max-width: 100%; 
 }
 
 /*------------------IMAGENES----------------------*/
 .img {
     width: auto;
     margin: 0px 20px;
+    display: flex;
 }
 .img img{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 /*------------DESCRIPCION----------------*/
 .descripcion {
     background-color: white;
     margin: 0px 20px;
-    padding: 10px;
+    padding: 15px;
     border-top: solid 1px #ebebeb;
+}
+.contenedor-icono {
+    display: flex;
+    width: 15%;
+    position: relative;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    top: -1.8pc;
+    right: -87%;
 }
 .descripcion i {
     color: #39b54a;
-    border: solid 1px #39b54a;
-    border-radius: 100%;
-    padding: 1vw;
-    margin: 15px;
-    margin-bottom: 0px;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+.contenedor-texto {
+    margin-top: -10%;
 }
 .precio {
-    margin: 0px 0px 0px 15px;
+    flex-grow: 0.3;
     font-size: 18px;
+    padding: 0;
+    margin: 0%;
 }
 .off {
+    flex-grow: 0.7;
     color: #39b54a;
     font-size: 16px;
-    margin: 1px 0px 0px 15px;
+    padding: 0;
+    margin: 0%;
 }
 .descripcion h5 {
     display: none;
-    margin: 0px 0px 0px 15px;
     font-size: 16px; 
-    font-weight: lighter;   
+    font-weight: lighter;
+    padding-top: 15px;    
 }
 
 /*------------------TITULARES---------------------*/
-.main h3 {
-    font-size: 24px;    
+.section h3 {
+    font-size: 24px;
+    padding: 3% 0;
 }
 
 /*------------------FOOTER---------------*/
 footer {
     color: #666;
+    background-color: white;
+
 }
 #footer .icono i {
     color: #1259c3;
@@ -152,27 +209,106 @@ footer {
 #divFooter {
     padding-top: 10px;
 }
+#divFooter p {
+    margin-bottom: 0%;
+}
 
 /*-------------MEDIA----------*/
 
 @media (min-width: 361px) {
-    ul {
-        display: block;
-    }
-    .burger-menu{
-        display: none;
-    }
-    .img {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descripcion{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descripcion h5 {
-        display: block;
-    }
+
+/*-------------------- HEADER --------------------------*/
+
+/*-----------------LOGO-------------------*/
+.logo {
+    width: 30%;
+}
+.logo img {
+    min-width: fit-content;
+}
+/*--------------BARRA DE BUSQUEDA-------------*/
+.barraDeBusqueda {
+    width: 35%;
+    margin: auto;
+}
+/*---------------TEXTO---------------*/
+.textoHeader{
+    width: 35%;
+    text-align: center;
+}
+/*--------------NAVEGADOR---------------*/
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion ul {
+    display: flex;
+    justify-content: space-between;
+}
+.navegacion li {
+    margin: 0 5px;
+    font-display:inherit;
+}
+
+/*-----------------MENU BURGER-----------------*/
+.burger-menu{
+    display: none;
+}
+
+/*--------------------------MAIN---------------------------*/
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section article {
+    width: 50%;
+}
+
+/*---------------------BANNER---------------------------*/
+/*------------------IMAGENES----------------------*/
+.img {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+/*------------DESCRIPCION----------------*/
+.descripcion{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.descripcion h5 {
+    display: block;
+}
+
+/*------------------TITULARES---------------------*/
+.section .titulo {
+    width: 100%;
+}
+/*------------------FOOTER---------------*/
 }
 
 @media (min-width: 769px) {
-    
+    body {
+        font-size: 16px;
+    }
+/*-------------------- HEADER --------------------------*/
+#header {
+    padding: 0 20px;
+}
+/*-----------------LOGO-------------------*/
+/*--------------BARRA DE BUSQUEDA-------------*/
+/*---------------TEXTO---------------*/
+/*--------------NAVEGADOR---------------*/
+/*-----------------MENU BURGER-----------------*/
+/*--------------------------MAIN---------------------------*/
+.section article {
+        width: 25%;
+    }
+
+/*---------------------BANNER---------------------------*/
+/*------------------IMAGENES----------------------*/
+/*------------DESCRIPCION----------------*/
+/*------------------TITULARES---------------------*/
+/*------------------FOOTER---------------*/
+.pie-de-pagina {
+        display: flex;
+    }
 }
