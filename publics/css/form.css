@@ -1,0 +1,42 @@
+#main div {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 20%;
+}
+#main input {
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+#main button {
+    color: #ffffff;
+    background-color: #1259c3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+#main .radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 15px;
+}
+.radio label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio label p {
+    margin: 1px 15px 0;
+    align-items: center;
+}
+#main h3 {
+    padding-bottom: 15px;
+}
+.checkbox label {
+    display: flex;
+    padding: 10px;
+}
+.checkbox label p {
+    margin: 2px 15px 0;
+}
