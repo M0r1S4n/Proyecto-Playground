@@ -8,8 +8,10 @@ const publicpath = path.resolve (__dirname,'./publics')
 
 app.use(express.static(publicpath));
 
-app.listen (3000, ()=>{
-    console.log ('Servidor corriendo')
+app.set ('puerto', process.env.PORT || 3001)
+
+app.listen (app.get ('puerto'), ()=>{
+    console.log (`Servidor corriendo ${app.get('puerto')}`)
 });
 
 app.get ('/', (req,res)=>{
